@@ -7,6 +7,10 @@ import NavBar from './components/NavBar';
 
 function App() {
   return (
+    <div className="font-nunito text-red-500 bg-gradient-to-r from-red-400
+     selection:bg-red-600 selection:text-white
+    ">
+
     <BrowserRouter>
       <NavBar />
       <Routes>
@@ -16,6 +20,7 @@ function App() {
         
       </Routes>
     </BrowserRouter>
+    </div>
    
   );
 }
