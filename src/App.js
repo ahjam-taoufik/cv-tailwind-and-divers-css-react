@@ -7,7 +7,7 @@ import NavBar from './components/NavBar';
 
 function App() {
   return (
-    <div className="font-nunito text-red-500 bg-gradient-to-r from-red-400
+    <div className=" font-nunito text-skin-base bg-gradient-to-r from-skin-hue
      selection:bg-red-600 selection:text-white
     ">
 

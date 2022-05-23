@@ -29,7 +29,7 @@ const Home = () => {
           nisi nisl aliquam nunc, eget egestas nunc nisl eu nisi.
           <button
           onClick={()=>navigate('/s')}
-          className="border-2 border-red-700 font-bold m-3 p-2 pb-1 pr-6 rounded-sm"
+          className="border-2 border-current font-bold m-3 p-2 pb-1 pr-6 rounded-sm"
           >Shop Now</button>
         </p>
        </div>

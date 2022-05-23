@@ -4,9 +4,36 @@
 
 @layer components {
     .active-state {
-        @apply mr-8 text-red-800
+        @apply mr-8 text-skin-base
     }
     .inactive-state {
-        @apply mr-8 text-gray-500
+        @apply mr-8 text-skin-base2
     }
+}
+
+@layer base {
+    :root {
+        --text-color:rgb(220 38 38);
+        --text-color2:rgb(100 100 100);
+        --fill-color:rgb(248 113 133);
+        --fill-color-indicator:rgb(220 38 38);
+
+    }    
+    .theme-dark {
+        --text-color:rgb(51 65 85);
+        --text-color2:rgb(100 100 100);
+        --fill-color:rgb(148 163 184);
+        --fill-color-indicator:rgb(51 65 85);
+
+    }
+    .theme-purple {
+        --text-color:rgb(147 51 234);
+        --text-color2:rgb(100 100 100);
+        --fill-color:rgb(192 132 252);
+        --fill-color-indicator:rgb(147 51 234);
+
+    }
+
+
+
 }
