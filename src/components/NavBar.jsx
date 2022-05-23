@@ -4,7 +4,6 @@ import { NavLink } from 'react-router-dom';
 const NavBar = () => {
   const navItems = [
     {
-      name: 'Home',
       path: '/',
       icon: (
         <svg
@@ -24,7 +23,6 @@ const NavBar = () => {
       ),
     },
     {
-      name: 'Shop',
       path: 's',
       icon: (
         <svg
@@ -43,19 +41,42 @@ const NavBar = () => {
         </svg>
       ),
     },
+    {
+      path: 'c',
+      icon: (
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="h-6 w-6"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+          stroke-width="2"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
+          />
+        </svg>
+      ),
+    },
   ];
 
   return (
     // <div className="fixed bottom-5 bg-slate-300 w-screen">
     <div className="fixed bottom-5  w-screen">
       <div className="flex justify-center">
-        {navItems.map((item,index) => (
-          <NavLink 
-          key={index} 
-          to={item.path}
-          // className={({isActive}) => (isActive? 'text-white bg-slate-500' : 'text-white')}
-          className={({isActive}) => (isActive? 'active-state' : 'inactive-state')}
-           >{item.icon}</NavLink>
+        {navItems.map((item, index) => (
+          <NavLink
+            key={index}
+            to={item.path}
+            // className={({isActive}) => (isActive? 'text-white bg-slate-500' : 'text-white')}
+            className={({ isActive }) =>
+              isActive ? 'active-state' : 'inactive-state'
+            }
+          >
+            {item.icon}
+          </NavLink>
         ))}
       </div>
     </div>
