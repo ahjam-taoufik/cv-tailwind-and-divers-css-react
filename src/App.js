@@ -48,8 +48,8 @@ function App() {
       <ThemeButton  setTheme={setTheme} />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/c" element={<Contact />} />
-        <Route path="/s" element={<Shop />} />
+        <Route path="/contact" element={<Contact />} />
+        <Route path="/shop" element={<Shop />} />
         
       </Routes>
     </BrowserRouter>
